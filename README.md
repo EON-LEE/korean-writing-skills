@@ -19,7 +19,7 @@ skills/korean-clear-writing/
 
 ## 설치
 
-저장소를 복제한 뒤 `skills/korean-clear-writing` 폴더를 사용자 공용 Copilot skills 폴더에 복사한다.
+저장소를 복제한 뒤 `skills/korean-clear-writing` 폴더를 사용자별 Copilot 스킬 폴더에 복사한다.
 
 ### Windows PowerShell
 
@@ -36,7 +36,7 @@ mkdir -p ~/.copilot/skills/korean-clear-writing
 cp -R ./skills/korean-clear-writing/. ~/.copilot/skills/korean-clear-writing/
 ```
 
-Copilot에서 다음 명령으로 스킬 목록을 다시 불러온다.
+Copilot CLI에서 다음 명령으로 스킬 목록을 다시 불러온다.
 
 ```text
 /skills reload
@@ -54,13 +54,8 @@ Copilot에서 다음 명령으로 스킬 목록을 다시 불러온다.
 
 ## 출처와 범위
 
-스킬은 ASD-STE100의 명확성 원칙과 Andrej Karpathy가 제안한 설명 형식을 참고한다. 세부 출처와 지침 대응은 `skills/korean-clear-writing/references/source-mapping.md`에 기록되어 있다.
+스킬은 ASD-STE100의 명확성 원칙과 Andrej Karpathy가 제안한 설명 형식을 참고한다.
+
+세부 출처와 지침 대응은 `skills/korean-clear-writing/references/source-mapping.md`에 기록되어 있다.
 
 이 저장소는 공식 ASD-STE100 번역, 인증 자료, 전체 표준 준수 검사 도구가 아니다. 표준 전문이나 통제 어휘 사전을 포함하지 않으며, 실제 문서의 공식 준수 여부를 보증하지 않는다.
-
-## GitHub 작업 규칙
-
-- Copilot 앱과 기본 `gh` 계정은 `eonlee_MSDEMO`를 사용한다.
-- Git fetch/push는 기존 EON-LEE Git 인증을 사용하며, 별도 인증 include를 중복 적용하지 않는다.
-- EON-LEE 저장소의 `gh` 쓰기 작업은 EON-LEE 토큰을 해당 프로세스에만 설정하고 작업 직후 제거한다.
-- Branch protection을 약화하거나 force push하지 않는다.
